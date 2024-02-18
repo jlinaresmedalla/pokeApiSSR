@@ -8,14 +8,15 @@ const PokemonCard = ({ pokemon }: { pokemon: simplePokemon }) => {
     <div className="mx-auto right-0 mt-2 w-60">
       <div className="bg-white rounded overflow-hidden shadow-lg">
         <div className="flex flex-col text-center p-6 bg-gray-800 border-b items-center">
-          <Image
-            key={pokemon.id}
-            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg`}
-            width={100}
-            height={100}
-            alt={pokemon.name}
-            priority={false}
-          />
+          <div className="w-20">
+            <Image
+              src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg`}
+              width={0}
+              height={0}
+              alt={pokemon.name}
+              style={{ width: "100px", height: "auto" }}
+            />
+          </div>
           <p className="pt-2 text-lg font-semibold text-gray-50 capitalize">
             {pokemon.name}
           </p>
