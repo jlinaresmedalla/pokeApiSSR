@@ -1,7 +1,4 @@
-import Image from "next/image";
-import { PokemonsResponse } from "../../pokemons/interfaces/pokemonsResponse.interface";
-import { simplePokemon } from "../../pokemons/interfaces/simplePokemon";
-import { PokemonGrid } from "@/app/pokemons";
+import { PokemonGrid, PokemonsResponse, simplePokemon } from "@/pokemons";
 
 const getPokemons = async (
   limit = 20,

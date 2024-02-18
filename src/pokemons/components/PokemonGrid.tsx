@@ -1,6 +1,5 @@
-import Image from "next/image";
 import { simplePokemon } from "../interfaces/simplePokemon";
-import PokemonCard from "./PokemonCard";
+import { PokemonCard } from "./PokemonCard";
 
 export const PokemonGrid = ({ pokemons }: { pokemons: simplePokemon[] }) => {
   return (

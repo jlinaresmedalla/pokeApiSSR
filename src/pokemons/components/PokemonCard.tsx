@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { simplePokemon } from "../interfaces/simplePokemon";
 import Image from "next/image";
 import { IoHeartOutline } from "react-icons/io5";
+import { simplePokemon } from "../interfaces/simplePokemon";
 
-const PokemonCard = ({ pokemon }: { pokemon: simplePokemon }) => {
+export const PokemonCard = ({ pokemon }: { pokemon: simplePokemon }) => {
   return (
     <div className="mx-auto right-0 mt-2 w-60">
       <div className="bg-white rounded overflow-hidden shadow-lg">
@@ -49,5 +49,3 @@ const PokemonCard = ({ pokemon }: { pokemon: simplePokemon }) => {
     </div>
   );
 };
-
-export default PokemonCard;
